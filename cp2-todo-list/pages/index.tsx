@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/router";
 import { useState } from "react";
+import "./page.css"
 
 const LoginPage: React.FC = () =>{
 
@@ -30,29 +31,31 @@ const LoginPage: React.FC = () =>{
     } 
 
     return(
-        <>
-            <h1> Login</h1>
+        <section>
+            <div className="centralizar">
+                <h1 className="login"> Login</h1>
 
-            <form action="">
-                <label>Usuário: 
-                    <input type="text" placeholder="Usuário" value={ username } onChange={ (e) => setUsername(e.target.value)}/><br/>
-                </label>
+                <form className="formulario" action="">
+                    <label className="titulo">Usuário: 
+                        <input type="text" placeholder="Usuário" value={ username } onChange={ (e) => setUsername(e.target.value)}/><br/>
+                    </label>
 
-                <br />
+                    <br />
 
-                <label>Senha: 
-                    <input type="password" placeholder="Senha" value={ password } onChange={ (e) => setPassword(e.target.value)}/><br/>
-                </label>
+                    <label className="titulo">Senha: 
+                        <input type="password" placeholder="Senha" value={ password } onChange={ (e) => setPassword(e.target.value)}/><br/>
+                    </label>
 
-                <br />
+                    <br />
 
-                <button onClick={ handleLogin}>Login</button>
-                <br />
-                { error && <span>{ error }</span>}
-                <br />
+                    <button className="btn" onClick={ handleLogin}>Login</button>
+                    <br />
+                    { error && <span>{ error }</span>}
+                    <br />
 
-            </form>
-        </>
+                </form>
+            </div>
+        </section>
     )
 }
 
