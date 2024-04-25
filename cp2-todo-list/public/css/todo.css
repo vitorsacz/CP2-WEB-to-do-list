@@ -1,0 +1,41 @@
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap:24px;
+   height: 70vh;
+}
+
+.todo{
+    width: 50%;
+    background-color: rgb(248, 106, 106);
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    margin-top: 20px;
+    
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+button{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+
+
